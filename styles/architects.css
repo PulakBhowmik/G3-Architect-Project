@@ -21,7 +21,17 @@
 }
 
 .bg-light{
-  background-color: rgb(223, 148, 10);
+  background-color: rgba(223, 149, 10, 0.566);
+}
+
+.btn-primary{
+  padding: 20px;
+  background-color: orange;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  border: 0;
 }
 /* header styles */
 
@@ -48,6 +58,33 @@
 }
 
 .navbar, .banner{
-  max-width: 1440px;
+  max-width: 1440px; /*motamuti ekta size nicche, chaile change kora jabe*/
+  /* banner and navbar ke same size e rakhte eder 2 jon er max-width same rakhlam -> very important !!!!!!!!!!!! */
   margin: 0 auto;
+}
+
+/* banner related styles */
+.banner-content{
+  /* motamuti size nicche, changeable */
+  max-width: 850px;
+  /*full div take center korte*/
+  margin: 0 auto;
+  /* text gulake left to right na rekhe center e rakhte */
+  text-align: center;
+  margin-bottom: 50px; /*figma onujayi*/
+}
+
+.banner-title{
+  font-weight: 700;
+  font-size: 4em;
+}
+
+.banner-img{
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar, .nav-links{
+    flex-direction: column;
+  }
 }
