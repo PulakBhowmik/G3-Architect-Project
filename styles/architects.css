@@ -33,6 +33,16 @@
   color: white;
   border: 0;
 }
+
+main{
+  /* device jerokom e hok center e boshe jabe main ta and possible hoile ei poriman width nibe. jodi kom jayga thake, tahole oi onujayi center korar moto jayga nibe. ekhane maximum koto hoite pare sheta bujhano hoise.*/
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main > section{
+  margin-top: 130px; /* figma onujayi */
+}
 /* header styles */
 
 
@@ -82,6 +92,31 @@
 .banner-img{
   width: 100%;
 }
+
+.teams{
+  align-items: center;
+}
+
+.team-img-container{
+  display: grid; /* flex er cheye eta grid diye kora easy */
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+
+.our-ft{
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+.ft-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+#quick-list{
+  font-weight: 500;
+}
+
 
 @media screen and (max-width: 576px) {
   .navbar, .nav-links{
